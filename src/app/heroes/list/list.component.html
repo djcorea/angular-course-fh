@@ -1,0 +1,21 @@
+<h1>Heroes List</h1>
+<div *ngIf="deletedHero!=''; else noDeleted">
+    <p>Deleted Hero</p>
+    <span>{{deletedHero}}</span>
+</div>
+<br>
+<ng-template #noDeleted>
+    <h4>Anything deleted yet</h4>
+</ng-template>
+
+    
+<br>
+<button (click)="deleteHero()">
+    Delete
+</button>
+<p>Heroes List</p>
+
+<ol >
+    <li *ngFor="let name of heroes">{{name}}</li>
+</ol>
+
