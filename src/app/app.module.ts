@@ -4,15 +4,17 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { HeroesModule } from './heroes/heroes.module';
 import { CounterModule } from './counter/counter.module';
+import { DragonBallZModule } from './dragon-ball-z/dragon-ball-z.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
     HeroesModule,
-    CounterModule
+    CounterModule,
+    DragonBallZModule
   ],
   providers: [],
   bootstrap: [AppComponent]
